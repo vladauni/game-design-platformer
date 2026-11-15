@@ -1,0 +1,860 @@
+fileFormatVersion: 2
+guid: a4b3250d0fe65324b9741432d2f221dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 508163879684939307
+    second: Walking Enemy - Sprite sheet_0
+  - first:
+      213: 2983625078618795860
+    second: Walking Enemy - Sprite sheet_1
+  - first:
+      213: -7222401545258168610
+    second: Walking Enemy - Sprite sheet_2
+  - first:
+      213: 6763597850773232528
+    second: Walking Enemy - Sprite sheet_3
+  - first:
+      213: -7826440354647399631
+    second: Walking Enemy - Sprite sheet_4
+  - first:
+      213: -1829398422470140573
+    second: Walking Enemy - Sprite sheet_5
+  - first:
+      213: -1692055379881791850
+    second: Walking Enemy - Sprite sheet_6
+  - first:
+      213: -5164609124740928769
+    second: Walking Enemy - Sprite sheet_7
+  - first:
+      213: 2054126332969078326
+    second: Walking Enemy - Sprite sheet_8
+  - first:
+      213: 7358775893430557608
+    second: Walking Enemy - Sprite sheet_9
+  - first:
+      213: 2595487121428675095
+    second: Walking Enemy - Sprite sheet_10
+  - first:
+      213: -3720739667627633400
+    second: Walking Enemy - Sprite sheet_11
+  - first:
+      213: -6673847357607472266
+    second: Walking Enemy - Sprite sheet_12
+  - first:
+      213: 3646384623557813744
+    second: Walking Enemy - Sprite sheet_13
+  - first:
+      213: 1417572178516720282
+    second: Walking Enemy - Sprite sheet_14
+  - first:
+      213: -6023555797573067548
+    second: Walking Enemy - Sprite sheet_15
+  - first:
+      213: -4947280202810304123
+    second: Walking Enemy - Sprite sheet_16
+  - first:
+      213: 1438602954416468761
+    second: Walking Enemy - Sprite sheet_17
+  - first:
+      213: 7809249628191850861
+    second: Walking Enemy - Sprite sheet_18
+  - first:
+      213: -8624536705572285824
+    second: Walking Enemy - Sprite sheet_19
+  - first:
+      213: 4025287918171933367
+    second: Walking Enemy - Sprite sheet_20
+  - first:
+      213: -3482438975333104187
+    second: Walking Enemy - Sprite sheet_21
+  - first:
+      213: -6277497673138247813
+    second: Walking Enemy - Sprite sheet_22
+  - first:
+      213: -4757196591220663402
+    second: Walking Enemy - Sprite sheet_23
+  - first:
+      213: 2030747587753958527
+    second: Walking Enemy - Sprite sheet_24
+  - first:
+      213: -4484694450273773311
+    second: Walking Enemy - Sprite sheet_25
+  - first:
+      213: -3987204905928698412
+    second: Walking Enemy - Sprite sheet_26
+  - first:
+      213: -6680100362310509783
+    second: Walking Enemy - Sprite sheet_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e1e403b5c5d0700800000000000000
+      internalID: 508163879684939307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f250a7337f76920800000000000000
+      internalID: 2983625078618795860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede87ad7f00e4cb90800000000000000
+      internalID: -7222401545258168610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b1fe209602ddd50800000000000000
+      internalID: 6763597850773232528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133a575b6f5e26390800000000000000
+      internalID: -7826440354647399631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dd10cc3dbac96e0800000000000000
+      internalID: -1829398422470140573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e6bddc89c9488e0800000000000000
+      internalID: -1692055379881791850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa63144d5f9358b0800000000000000
+      internalID: -5164609124740928769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ec5604409b18c10800000000000000
+      internalID: 2054126332969078326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abd2a5cfaf9f1660800000000000000
+      internalID: 7358775893430557608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a7bd319c5050420800000000000000
+      internalID: 2595487121428675095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80599515cf64d5cc0800000000000000
+      internalID: -3720739667627633400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67390a4103bb163a0800000000000000
+      internalID: -6673847357607472266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f52c99ee7f8a9230800000000000000
+      internalID: 3646384623557813744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a37ffb26a3ca310800000000000000
+      internalID: 1417572178516720282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec99e09ae7086ca0800000000000000
+      internalID: -6023555797573067548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5895b2b0edab75bb0800000000000000
+      internalID: -4947280202810304123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91332d6d3c1f6f310800000000000000
+      internalID: 1438602954416468761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d610ab26927006c60800000000000000
+      internalID: 7809249628191850861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082db00af8d7f4880800000000000000
+      internalID: -8624536705572285824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba4f41e802bcd730800000000000000
+      internalID: 4025287918171933367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c58b43e334ebafc0800000000000000
+      internalID: -3482438975333104187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77e04a3029d1e8a0800000000000000
+      internalID: -6277497673138247813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bd79da7ea0bfdb0800000000000000
+      internalID: -4757196591220663402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c5e84fb2aae2c10800000000000000
+      internalID: 2030747587753958527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109144d882a23c1c0800000000000000
+      internalID: -4484694450273773311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5dc6f534a9aa8c0800000000000000
+      internalID: -3987204905928698412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Enemy - Sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b1688fc148b43a0800000000000000
+      internalID: -6680100362310509783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Walking Enemy - Sprite sheet_0: 508163879684939307
+      Walking Enemy - Sprite sheet_1: 2983625078618795860
+      Walking Enemy - Sprite sheet_10: 2595487121428675095
+      Walking Enemy - Sprite sheet_11: -3720739667627633400
+      Walking Enemy - Sprite sheet_12: -6673847357607472266
+      Walking Enemy - Sprite sheet_13: 3646384623557813744
+      Walking Enemy - Sprite sheet_14: 1417572178516720282
+      Walking Enemy - Sprite sheet_15: -6023555797573067548
+      Walking Enemy - Sprite sheet_16: -4947280202810304123
+      Walking Enemy - Sprite sheet_17: 1438602954416468761
+      Walking Enemy - Sprite sheet_18: 7809249628191850861
+      Walking Enemy - Sprite sheet_19: -8624536705572285824
+      Walking Enemy - Sprite sheet_2: -7222401545258168610
+      Walking Enemy - Sprite sheet_20: 4025287918171933367
+      Walking Enemy - Sprite sheet_21: -3482438975333104187
+      Walking Enemy - Sprite sheet_22: -6277497673138247813
+      Walking Enemy - Sprite sheet_23: -4757196591220663402
+      Walking Enemy - Sprite sheet_24: 2030747587753958527
+      Walking Enemy - Sprite sheet_25: -4484694450273773311
+      Walking Enemy - Sprite sheet_26: -3987204905928698412
+      Walking Enemy - Sprite sheet_27: -6680100362310509783
+      Walking Enemy - Sprite sheet_3: 6763597850773232528
+      Walking Enemy - Sprite sheet_4: -7826440354647399631
+      Walking Enemy - Sprite sheet_5: -1829398422470140573
+      Walking Enemy - Sprite sheet_6: -1692055379881791850
+      Walking Enemy - Sprite sheet_7: -5164609124740928769
+      Walking Enemy - Sprite sheet_8: 2054126332969078326
+      Walking Enemy - Sprite sheet_9: 7358775893430557608
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
