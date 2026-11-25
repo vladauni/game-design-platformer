@@ -59,6 +59,18 @@ public class PlayerController : MonoBehaviour
         float x = Mathf.MoveTowards(body.linearVelocity.x, target,
                                     rate * Time.fixedDeltaTime);
         body.linearVelocity = new Vector2(x, body.linearVelocity.y);
+
+        if (body.linearVelocity.y < 0f)
+            // Падає — тягнемо вниз сильніше. Прибирає «зависання» у верхній точці
+            body.gravityScale = baseGravity * fallMultiplier;
+
+        else if (body.linearVelocity.y > 0f && !controls.Player.Jump.IsPressed())
+            // Летить угору, але клавішу вже відпущено — обрізаємо стрибок гравітацією
+            body.gravityScale = baseGravity * lowJumpMultiplier;
+
+        else
+            body.gravityScale = baseGravity;
+
     }
 
     [Header("Земля")]
@@ -104,6 +116,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField, Range(0f, 0.4f)] private float jumpBufferTime = 0.15f;
     private float jumpBufferCounter;
+
+    [SerializeField, Range(1f, 6f)] private float fallMultiplier = 2.2f;
+    [SerializeField, Range(1f, 8f)] private float lowJumpMultiplier = 3.5f;
+
 
 
 }
