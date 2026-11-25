@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = CheckGround();
 
+        CheckLanding();
         // Поповнюємо coyote лише коли стоїмо, а не летимо вгору — див. крок 6
         bool canRefill = isGrounded && body.linearVelocity.y <= 0.01f;
         coyoteCounter = canRefill ? coyoteTime : coyoteCounter - Time.deltaTime;
@@ -135,6 +136,34 @@ public class PlayerController : MonoBehaviour
         // flipX, а НЕ мінусовий масштаб: інакше дочірній GroundCheck переїде
         if (Mathf.Abs(moveInput) > 0.01f)
             spriteRenderer.flipX = moveInput < 0f;
+    }
+    [Header("Зворотний звʼязок")]
+    [SerializeField, Range(1f, 20f)] private float hardLandingSpeed = 9f;
+
+    private bool wasGrounded;
+    private float fallSpeed;     // найбільша швидкість падіння перед дотиком
+
+    // Викликати наприкінці Update(), після isGrounded = CheckGround();
+    private void CheckLanding()
+    {
+        // Поки летимо вниз — памʼятаємо, наскільки швидко
+        if (!isGrounded)
+            fallSpeed = Mathf.Max(fallSpeed, -body.linearVelocity.y);
+
+        if (isGrounded && !wasGrounded)   // ← саме ПЕРЕХІД, а не стан
+            OnLanded(fallSpeed);
+
+        if (isGrounded) fallSpeed = 0f;
+        wasGrounded = isGrounded;
+    }
+    [SerializeField] private CameraShake cameraShake;
+    private void OnLanded(float speed)
+    {
+        // ТІЛЬКИ жорстке приземлення. Легкий зскок зі сходинки ефекту не дає
+        if (speed < hardLandingSpeed) return;
+
+        // ↓ сюди додасться ОДИН рядок із обраного варіанта — А або Б
+        cameraShake.Shake(0.12f, 0.12f);
     }
 
 
