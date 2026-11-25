@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         isGrounded = CheckGround();
-
+        UpdateFootsteps();
         CheckLanding();
         // Поповнюємо coyote лише коли стоїмо, а не летимо вгору — див. крок 6
         bool canRefill = isGrounded && body.linearVelocity.y <= 0.01f;
@@ -165,6 +165,43 @@ public class PlayerController : MonoBehaviour
         // ↓ сюди додасться ОДИН рядок із обраного варіанта — А або Б
         cameraShake.Shake(0.12f, 0.12f);
     }
+    [Header("Звук")]
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip[] footsteps;   // щонайменше ТРИ кліпи
+    [SerializeField, Range(0f, 0.3f)] private float pitchVariance = 0.12f;
+
+    private void PlayFootstep()
+    {
+        if (footsteps.Length == 0) return;
+
+        // Два шари випадковості:
+        // 1) різні кліпи — прибирає впізнаваність конкретного звуку
+        AudioClip clip = footsteps[Random.Range(0, footsteps.Length)];
+
+        // 2) розкид висоти тону — прибирає механічність повторення
+        source.pitch = 1f + Random.Range(-pitchVariance, pitchVariance);
+        source.PlayOneShot(clip);
+    }
+
+    [SerializeField, Range(0.1f, 0.8f)] private float stepInterval = 0.32f;
+    private float stepTimer;
+
+    // Викликати в Update(), після isGrounded = CheckGround();
+    private void UpdateFootsteps()
+    {
+        bool running = isGrounded && Mathf.Abs(body.linearVelocity.x) > 0.5f;
+
+        // Не біжимо — скидаємо таймер, щоб перший крок після старту був одразу
+        if (!running) { stepTimer = 0f; return; }
+
+        stepTimer -= Time.deltaTime;
+        if (stepTimer <= 0f)
+        {
+            PlayFootstep();
+            stepTimer = stepInterval;
+        }
+    }
+
 
 
 }
