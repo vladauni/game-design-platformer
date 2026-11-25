@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = CheckGround();
         // Введення читають у Update: FixedUpdate може пропустити короткий натиск
         moveInput = controls.Player.Move.ReadValue<Vector2>().x;
     }
@@ -40,4 +41,24 @@ public class PlayerController : MonoBehaviour
                                     rate * Time.fixedDeltaTime);
         body.linearVelocity = new Vector2(x, body.linearVelocity.y);
     }
+
+    [Header("Земля")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField, Range(0.05f, 0.5f)] private float groundCheckRadius = 0.15f;
+    [SerializeField] private LayerMask groundLayer;
+
+    private bool isGrounded;
+
+    // Коло перекриває всю ширину ніг, а не одну точку
+    private bool CheckGround() =>
+        Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+    // Без візуалізації датчик налагоджувати неможливо
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+        Gizmos.color = Application.isPlaying && isGrounded ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
 }

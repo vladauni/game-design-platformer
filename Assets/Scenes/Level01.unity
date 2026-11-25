@@ -2253,6 +2253,11 @@ MonoBehaviour:
   maxSpeed: 8
   acceleration: 70
   deceleration: 90
+  groundCheck: {fileID: 534864649}
+  groundCheckRadius: 0.15
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1483946288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5829190241938622536, guid: 0a740182a7f797b4db581351af4f7699, type: 3}
