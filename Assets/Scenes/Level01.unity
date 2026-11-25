@@ -2258,6 +2258,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  jumpHeight: 2
+  baseGravity: 3
 --- !u!1 &1483946288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5829190241938622536, guid: 0a740182a7f797b4db581351af4f7699, type: 3}
