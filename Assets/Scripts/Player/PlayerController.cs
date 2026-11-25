@@ -45,8 +45,8 @@ public class PlayerController : MonoBehaviour
         }
 
         moveInput = controls.Player.Move.ReadValue<Vector2>().x;
-        
-        
+
+        UpdateVisuals();
     }
 
     private void FixedUpdate()
@@ -120,6 +120,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(1f, 6f)] private float fallMultiplier = 2.2f;
     [SerializeField, Range(1f, 8f)] private float lowJumpMultiplier = 3.5f;
 
+    [Header("Вигляд")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
+
+    // Викликати наприкінці Update()
+    private void UpdateVisuals()
+    {
+        // Джерело істини — фактична швидкість тіла, а не натиснута клавіша
+        animator.SetFloat(SpeedHash, Mathf.Abs(body.linearVelocity.x));
+
+        // flipX, а НЕ мінусовий масштаб: інакше дочірній GroundCheck переїде
+        if (Mathf.Abs(moveInput) > 0.01f)
+            spriteRenderer.flipX = moveInput < 0f;
+    }
 
 
 }
