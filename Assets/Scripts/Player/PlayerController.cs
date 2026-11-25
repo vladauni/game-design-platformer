@@ -26,7 +26,16 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         isGrounded = CheckGround();
-        if (controls.Player.Jump.WasPressedThisFrame() && isGrounded) Jump();
+        bool canRefill = isGrounded && body.linearVelocity.y <= 0.01f;
+
+        coyoteCounter = canRefill ? coyoteTime : coyoteCounter - Time.deltaTime;
+
+        if (controls.Player.Jump.WasPressedThisFrame() && coyoteCounter > 0f)
+        {
+            Jump();
+            coyoteCounter = 0f;   // обнулення теж обов'язкове
+        }
+
         // Введення читають у Update: FixedUpdate може пропустити короткий натиск
         moveInput = controls.Player.Move.ReadValue<Vector2>().x;
     }
@@ -79,7 +88,14 @@ public class PlayerController : MonoBehaviour
         body.linearVelocity = new Vector2(body.linearVelocity.x, JumpVelocity);
     }
 
+    
+        [Header("Прийоми тюнінгу")]
+    [SerializeField, Range(0f, 0.4f)] private float coyoteTime = 0.12f;
+    private float coyoteCounter;
+ 
     // У Update, після isGrounded = CheckGround();
-    //     if (controls.Player.Jump.WasPressedThisFrame() && isGrounded) Jump();
-
+ 
+    // Поповнюємо таймер ТІЛЬКИ коли персонаж справді стоїть, а не летить угору.
+    // Без цієї умови буде подвійний стрибок — пояснення нижче
+   
 }
