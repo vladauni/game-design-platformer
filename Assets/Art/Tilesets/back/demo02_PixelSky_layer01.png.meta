@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f4b8ee967fcd774d99c10ec3405099e
+guid: bd865fbfeb3e2f24a8a637d35fab9b5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1868260715369797666
-    second: demo01_PixelSky_layer02_0
+      213: 1935736336549586415
+    second: demo02_PixelSky_layer01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -77,7 +77,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: demo01_PixelSky_layer02_0
+      name: demo02_PixelSky_layer01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 240
-        height: 109
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2281f6fd8356de910800000000000000
-      internalID: 1868260715369797666
+      spriteID: fe5aade21fd1dda10800000000000000
+      internalID: 1935736336549586415
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      demo01_PixelSky_layer02_0: 1868260715369797666
+      demo02_PixelSky_layer01_0: 1935736336549586415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
