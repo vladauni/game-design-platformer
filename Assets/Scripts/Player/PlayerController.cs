@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
         controls = new PlayerControls();
     }
 
@@ -156,14 +158,14 @@ public class PlayerController : MonoBehaviour
         if (isGrounded) fallSpeed = 0f;
         wasGrounded = isGrounded;
     }
-    [SerializeField] private CameraShake cameraShake;
+    [SerializeField] private CinemachineImpulseSource impulseSource;
     private void OnLanded(float speed)
     {
         // ТІЛЬКИ жорстке приземлення. Легкий зскок зі сходинки ефекту не дає
         if (speed < hardLandingSpeed) return;
 
         // ↓ сюди додасться ОДИН рядок із обраного варіанта — А або Б
-        cameraShake.Shake(0.12f, 0.12f);
+        impulseSource.GenerateImpulseWithForce(0.4f);
     }
     [Header("Звук")]
     [SerializeField] private AudioSource source;
