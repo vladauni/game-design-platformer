@@ -47,6 +47,10 @@ public class PlayerController : MonoBehaviour
             coyoteCounter = 0f;
         }
 
+        if (controls.Player.Interact.WasPressedThisFrame())
+            TryInteract();
+
+
         moveInput = controls.Player.Move.ReadValue<Vector2>().x;
 
         UpdateVisuals();
@@ -204,6 +208,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    [Header("Взаємодія")]
+    [SerializeField] private Transform interactPoint;
+    [SerializeField, Range(0.2f, 1.5f)] private float interactRadius = 0.6f;
+    [SerializeField] private LayerMask interactableLayer;
+
+    private void TryInteract()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(
+            interactPoint.position, interactRadius, interactableLayer);
+
+        if (hit != null && hit.TryGetComponent(out IInteractable target))
+            target.Interact();
+    }
 
 
 }
